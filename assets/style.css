@@ -186,6 +186,8 @@ a{ color:inherit; text-decoration:none }
 .hero__title .accent{
   background:linear-gradient(100deg, #C99433 0%, var(--gold) 34%, #FFE9BC 52%, var(--gold) 70%, #C99433 100%);
   -webkit-background-clip:text; background-clip:text; color:transparent;
+  /* хвосты букв (р, у, д) выходят ниже строки — расширяем зону маски, иначе градиент их режет */
+  padding-bottom:.18em; margin-bottom:-.18em;
 }
 .hero__eyebrow{ margin-bottom:26px }
 .hero__title{
